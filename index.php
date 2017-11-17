@@ -13,7 +13,7 @@
     Het woord dat wordt gefiltert is lol<br>
     En er is gebruik gemaakt van PDO<br><br>
 <?php
-$dbc = new PDO('mysql:hosts=localhost;dbname=21960_db', 'maurice', 'depies');
+$dbc = new PDO('mysql:hosts=localhost;dbname=21960_db', 'gebruikersnaam', 'password');
 $select = $dbc->prepare("SELECT naam,bericht FROM gastenboek");
 $select->execute();
 
